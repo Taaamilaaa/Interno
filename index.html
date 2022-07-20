@@ -19,13 +19,21 @@
   <header>
     <div class="container header-container">
       <a href="/" class="logo-link"><img src="/images/logo.png" alt="logo" class="logo-img" /></a>
+      <button type="button" class="header-lang__button">lang</button>
       <ul class="header-nav__list">
-        <li class="header-nav__item"><a href="#home" class="header-nav__link">Home</a></li>
+        <li class="header-nav__item"><a href="#home" class="header-nav__link">Home</a></li>       
+
         <li class="header-nav__item"><a href="#aboutUs" class="header-nav__link">About Us</a></li>
-        <li class="header-nav__item"><a href="#services" class="header-nav__link">Services</a></li>
-        <li class="header-nav__item"><a href="#pages" class="header-nav__link">Pages</a></li>
+        <li class="header-nav__item"><a href="#projects" class="header-nav__link">Projects</a></li>
+        <li class="header-nav__item"><a href="#blogs" class="header-nav__link">Blogs</a></li>
         <li class="header-nav__item"><a href="#contactUs" class="header-nav__link">Contact Us</a></li>
+        
       </ul>
+      <label class="topicSwitch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      
     </div>
   </header>
 
@@ -107,36 +115,48 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="aboutUs">
       <div class="aboutUs-container">
         <div class="aboutUs-content">
+          
           <h2 class="aboutUs-title">We Tackle The Most </br>Challenging Designs</h2>
           <p class="aboutUs-text">The world needs innovators and problem solvers who turn
             challenges into greater
             opportunities. We have an
             insatiable curiosity about transformative trends challenging the status.</p>
-          <div>
-            <div class="aboutUs-contacts">
-              <div class="aboutUs-flexContainer">
-                <div class="aboutUs-phone__button">
-                  <svg width="34" height="34" class="aboutUs-phone__icon">
-                    <use href="./images/sprite.svg#phone-icon"></use>
-                  </svg>
+          
+            
+            
+            <div>
+              <div class="aboutUs-contacts">
+                <div class="aboutUs-flexContainer">
+                  <a href="" class="aboutUs-tel__link">
+                    <div class="aboutUs-phone__button">
+                      
+                      <svg width="34" height="34" class="aboutUs-phone__icon">
+                        <use href="./images/sprite.svg#phone-icon"></use>
+                      </svg>
+                      
+                    </div>
+                    </a>
+                    <div class="aboutUs-contactsFlex ">
+                      <a href="tel: +012345678">+012345678</a>
+                      <span>Call Us Anytime</span>
+                    </div>
+                  
+                  
                 </div>
-                <div class="aboutUs-contactsFlex ">
-                  <a href="tel: +012345678">+012345678</a>
-                  <span>Call Us Anytime</span>
-                </div>
+                <button class="aboutUs-button button">Get Free Estimate <span>
+                    <svg width="23" height="17" class="button-arrow__icon">
+                      <use href="./images/sprite.svg#arrow-icon"></use>
+                    </svg>
+                  </span>
+                  </span>
+                </button>
               </div>
-              <button class="aboutUs-button button">Get Free Estimate <span>
-                  <svg width="23" height="17" class="button-arrow__icon">
-                    <use href="./images/sprite.svg#arrow-icon"></use>
-                  </svg>
-                </span>
-                </span>
-              </button>
             </div>
-          </div>
+          
+          
         </div>
         <div>
           <img src="/images/about-us.png" alt="Studio kitchen" class="aboutUs-img">
@@ -187,7 +207,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container brands-container">
       <ul class="brands-list">
         <li>
           <img src="/images/modern_home-logo.png" alt="logo" style="width: 132px; height: 43px">
@@ -207,7 +227,7 @@
       </ul>
     </section>
 
-    <section class="container projects-container">
+    <section class="container projects-container" id="projects">
       <h3 class="projects-title">Recent Projects</h3>
       <p class="projects-text">With tools to make every part of your process more human and a support team
         </br> excited to help you, getting started with us never been easier.</p>
@@ -280,7 +300,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="blogs">
       <h3 class="projects-title">Recent Blogs</h3>
       <p class="projects-text">Get updates about our latest trends and techniques used in
         </br> interior design project works.</p>
@@ -391,7 +411,7 @@
     </section>
 
 
-    <section class="container">
+    <section class="container" id="contactUs">
       <div class="contacts-container">
         <h2 class="contacts-title">Wanna join the interno?</h2>
         <p class="contacts-text">Contact Us & Get a Free Consultation</p>
@@ -512,6 +532,9 @@
 
 
   </foter>
+  <button type="button" class="up-button">↥</button>
+  <script src="/js/index.js" type="module"></script>
 </body>
+
 
 </html>
