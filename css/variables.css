@@ -1,10 +1,21 @@
-:root{
-    --primary-color: #CDA274;   
+:root {
+    --primary-color: #CDA274;
     --background-color: #F5F5F5;
     --minor-background-color: #F4F0EC;
     --text-color: #4D5053;
     --title-color: #292F36;
-    --main-font: 'Jost',sans-serif;
-    --title-font: 'DM Serif Display',serif;
+    --main-font: 'Jost', sans-serif;
+    --title-font: 'DM Serif Display', serif;
     --contrast-color: #ffffff;
+
+    --background-color-darck-topic: #535958;
+    --text-color-darck-topic: #DFDAD6;
+    --title-color-darck-topic: #292F36;
+    --minor-background-color-darck-topic: #4849495e;
+
+
+    --background-color-light-topic: #F5F5F5;
+    --text-color-light-topic: #4D5053;
+    --title-color-light-topic: #292F36;
+    --minor-background-color-light-topic: #F4F0EC;
 }

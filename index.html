@@ -18,11 +18,10 @@
 <body>
   <header>
     <div class="container header-container">
-      <a href="/" class="logo-link"><img src="/images/logo.png" alt="logo" class="logo-img" /></a>
+      <a href="/" class="logo-link"><img src="/images/logo.png" alt="logo" class="logo-img"/></a>
       <button type="button" class="header-lang__button">lang</button>
       <ul class="header-nav__list">
-        <li class="header-nav__item"><a href="#home" class="header-nav__link">Home</a></li>       
-
+        <li class="header-nav__item"><a href="#home" class="header-nav__link">Home</a></li>     
         <li class="header-nav__item"><a href="#aboutUs" class="header-nav__link">About Us</a></li>
         <li class="header-nav__item"><a href="#projects" class="header-nav__link">Projects</a></li>
         <li class="header-nav__item"><a href="#blogs" class="header-nav__link">Blogs</a></li>
@@ -30,7 +29,7 @@
         
       </ul>
       <label class="topicSwitch">
-        <input type="checkbox">
+        <input type="checkbox" id="checkbox">
         <span class="slider round"></span>
       </label>
       
@@ -159,7 +158,7 @@
           
         </div>
         <div>
-          <img src="/images/about-us.png" alt="Studio kitchen" class="aboutUs-img">
+          <img src="/images/about-us.png" alt="Studio kitchen" class="aboutUs-img" id="2">
         </div>
       </div>
     </section>
@@ -170,7 +169,7 @@
         <ul class="reviews-list">
           <li class="reviews-item">
             <div class="reviews-item__container">
-              <img src="/images/review-img1.png" alt="portrait of a women" class="reviews-item__img">
+              <img src="/images/review-img1.png" alt="portrait of a women" class="reviews-item__img" id="3">
               <div>
                 <h5 class="reviews-item__title">Lisa Clairton</h5>
                 <span class="reviews-item__titlePlace">New York, USA</span>
@@ -181,7 +180,7 @@
           </li>
           <li class="reviews-item">
             <div class="reviews-item__container">
-              <img src="/images/review-img2.png" alt="portrait of a man" class="reviews-item__img">
+              <img src="/images/review-img2.png" alt="portrait of a man" class="reviews-item__img" id="4">
               <div>
                 <h5 class="reviews-item__title">David Knight</h5>
                 <span class="reviews-item__titlePlace">Sydney, Australia</span>
@@ -193,7 +192,7 @@
           </li>
           <li class="reviews-item">
             <div class="reviews-item__container">
-              <img src="/images/review-img3.png" alt="portrait of a women" class="reviews-item__img">
+              <img src="/images/review-img3.png" alt="portrait of a women" class="reviews-item__img" id="5">
               <div>
                 <h5 class="reviews-item__title">Lisa Clairton</h5>
                 <span class="reviews-item__titlePlace">Paris, France</span>
@@ -210,19 +209,19 @@
     <section class="container brands-container">
       <ul class="brands-list">
         <li>
-          <img src="/images/modern_home-logo.png" alt="logo" style="width: 132px; height: 43px">
+          <img src="/images/modern_home-logo.png" alt="logo" style="width: 132px; height: 43px" >
         </li>
         <li>
-          <img src="/images/vs-logo.png" alt="logo" style="width: 103px; height: 103px">
+          <img src="/images/vs-logo.png" alt="logo" style="width: 103px; height: 103px" >
         </li>
         <li>
-          <img src="/images/brand_logo.png" alt="logo" style="width: 164px; height: 43px">
+          <img src="/images/brand_logo.png" alt="logo" style="width: 164px; height: 43px" >
         </li>
         <li>
-          <img src="/images/natur_home-logo.png" alt="logo" style="width: 145px; height: 45px">
+          <img src="/images/natur_home-logo.png" alt="logo" style="width: 145px; height: 45px" >
         </li>
         <li">
-          <img src="/images/classic-logo.png" alt="logo" style="width: 117px; height: 48px">
+          <img src="/images/classic-logo.png" alt="logo" style="width: 117px; height: 48px" >
           </li>
       </ul>
     </section>
@@ -233,7 +232,7 @@
         </br> excited to help you, getting started with us never been easier.</p>
       <ul class="projects-list">
         <li>
-          <img src="/images/projects-img1.png" alt="Art Modern" class="projects-list__img">
+          <img src="/images/projects-img1.png" alt="Art Modern" class="projects-list__img" id="11">
           <div class="projects-list__content">
             <h6 class="projects-list__title">Winery Dry Creek Building</h6>
             <span>Art Modern</span>
@@ -245,7 +244,7 @@
           </button>
         </li>
         <li>
-          <img src="/images/projects-img2.png" alt="Minimalist" class="projects-list__img">
+          <img src="/images/projects-img2.png" alt="Minimalist" class="projects-list__img" id="12">
           <div class="projects-list__content">
             <h6 class="projects-list__title">Creative Workplace Design</h6>
             <span>Minimalist</span>
@@ -255,7 +254,7 @@
             </svg></button>
         </li>
         <li>
-          <img src="/images/projects-img3.png" alt="Modern" class="projects-list__img">
+          <img src="/images/projects-img3.png" alt="Modern" class="projects-list__img" id="13">
           <div class="projects-list__content">
             <h6 class="projects-list__title">Bedroom Interior Pot Work</h6>
             <span>Modern</span>
@@ -265,7 +264,7 @@
             </svg></button>
         </li>
         <li>
-          <img src="/images/projects-img4.png" alt="Scandinavian" class="projects-list__img">
+          <img src="/images/projects-img4.png" alt="Scandinavian" class="projects-list__img" id="14">
           <div class="projects-list__content">
             <h6 class="projects-list__title">Light Ambience Sepia Design</h6>
             <span>Scandinavian</span>
@@ -282,19 +281,19 @@
         <ul class="experianse-list">
           <li class="experianse-list__item">
             <span class="experianse-item__title">12</span>
-            <p>Years Of Experiance</p>
+            <p class="experianse-list__text">Years Of Experiance</p>
           </li>
           <li class="experianse-list__item">
             <span class="experianse-item__title">5K</span>
-            <p>Success Project</p>
+            <p class="experianse-list__text">Success Project</p>
           </li>
           <li class="experianse-list__item">
             <span class="experianse-item__title">1K</span>
-            <p>Active Project</p>
+            <p class="experianse-list__text">Active Project</p>
           </li>
           <li class="experianse-list__item">
             <span class="experianse-item__title">4K</span>
-            <p>Happy Customers</p>
+            <p class="experianse-list__text">Happy Customers</p>
           </li>
         </ul>
       </div>
@@ -309,7 +308,7 @@
 
           <div class="blogs-item__container">
             <a href="" class="blogs-item__link">
-              <img src="/images/blogs-img1.png" alt="Kitchen Design" class="blogs-img">
+              <img src="/images/blogs-img1.png" alt="Kitchen Design" class="blogs-img" id="15">
               <p class="blog-massage">Kitchen Design</p>
             </a>
 
@@ -328,7 +327,7 @@
         <li class="blogs-item">
           <div class="blogs-item__container">
             <a href="" class="blogs-item__link">
-              <img src="/images/blogs-img2.png" alt="Living Room" class="blogs-img">
+              <img src="/images/blogs-img2.png" alt="Living Room" class="blogs-img" id="16">
               <p class="blog-massage">Living Room</p>
             </a>
 
@@ -344,7 +343,7 @@
         <li class="blogs-item">
           <div class="blogs-item__container">
             <a href="" class="blogs-item__link">
-              <img src="/images/blogs-img3.png" alt="Minimalist Interior" class="blogs-img">
+              <img src="/images/blogs-img3.png" alt="Minimalist Interior" class="blogs-img" id="17">
               <p class="blog-massage">Minimalist Interior</p>
             </a>
 
@@ -360,7 +359,7 @@
         <li class="blogs-item">
           <div class="blogs-item__container">
             <a href="" class="blogs-item__link"><img src="/images/blogs-img4.png" alt="Kitchen Design"
-                class="blogs-img">
+                class="blogs-img" id="18">
               <p class="blog-massage">Kitchen Design</p>
             </a>
 
@@ -377,7 +376,7 @@
         <li class="blogs-item">
           <div class="blogs-item__container">
             <a href="" class="blogs-item__link">
-              <img src="/images/blogs-img5.png" alt="Living Room" class="blogs-img">
+              <img src="/images/blogs-img5.png" alt="Living Room" class="blogs-img" id="19">
               <p class="blog-massage">Living Room</p>
             </a>
             <h6 class="blogs-content__title">Get Solution For Building Construction Work</h6>
@@ -393,7 +392,7 @@
           <div class="blogs-item__container">
             <a href="" class="blogs-item__link">
               <img src="/images/blogs-img6.png" alt="Minimalist Interior"
-                class="blogs-img">
+                class="blogs-img" id="20">
               <p class="blog-massage">Minimalist Interior</p>
             </a>
             <h6 class="blogs-content__title">Attain The Best Finish For The Kitchen Cabinets</h6>

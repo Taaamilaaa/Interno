@@ -774,7 +774,7 @@ svg path {
 }
 
 input:checked+.slider {
-    background-color: var(--text-color);
+    background-color: var(--title-color);
 }
 
 input:focus+.slider {
