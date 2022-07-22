@@ -27,9 +27,9 @@ function changeTopic(topic) {
 
         onLightTopicChange(topic);
         return;
-    } else if (topic === "darck") {
+    } else if (topic === "dark") {
 
-        onDarckTopicChange(topic);
+        onDarkTopicChange(topic);
         return;
 
     }
@@ -40,26 +40,10 @@ function onTopicSwitch(e) {
     let topic = "";
 
     if (e.target.checked) {
-        topic = 'darck';
+        topic = 'dark';
 
         localStorage.setItem("topic", JSON.stringify(topic));
-        onDarckTopicChange(topic);
-
-        // const images = imgChange();
-
-        // images.forEach((el, index) => {
-        //     for (var key in el) {
-        //         if (el[key]) {
-
-        //         }
-        //         console.log(el[key])
-        //     }
-        // })
-
-
-
-
-
+        onDarkTopicChange(topic);
     } else if (!e.target.checked) {
         topic = 'light';
 
@@ -79,47 +63,51 @@ const onLightTopicChange = (topic) => {
     document.documentElement.style.setProperty('--minor-background-color', 'var(--minor-background-color-light-topic)');
 
     refs.hero.style.backgroundImage = "url(/images/hero-img.jpg)";
+    imgChange(topic);
     return;
 };
 
-const onDarckTopicChange = (topic) => {
+const onDarkTopicChange = (topic) => {
     refs.checkBox.checked = "true";
 
-    document.documentElement.style.setProperty('--background-color', 'var(--background-color-darck-topic)');
-    document.documentElement.style.setProperty('--text-color', 'var(--text-color-darck-topic)');
-    document.documentElement.style.setProperty('--title-color', 'var(--title-color-darck-topic)');
-    document.documentElement.style.setProperty('--minor-background-color', 'var(--minor-background-color-darck-topic)');
+    document.documentElement.style.setProperty('--background-color', 'var(--background-color-dark-topic)');
+    document.documentElement.style.setProperty('--text-color', 'var(--text-color-dark-topic)');
+    document.documentElement.style.setProperty('--title-color', 'var(--title-color-dark-topic)');
+    document.documentElement.style.setProperty('--minor-background-color', 'var(--minor-background-color-dark-topic)');
 
     [...refs.reviweText, ...refs.experianseText, ...refs.blogMasText, ...refs.reviwePlaceText, refs.heroText].forEach(el => {
         el.style.color = 'var(--text-color-light-topic)';
     });
 
     refs.hero.style.backgroundImage = "url(/images/hero-img__bw.jpg)";
-
+    imgChange(topic);
     return;
-}
+};
 
 
-const images = imgChange();
+function imgChange(topic) {
 
-console.log(images);
-
-function imgChange() {
-    const imgPathArr = [];
-
-    refs.img.forEach((el, index) => {
+    refs.img.forEach((el) => {
         if (!el.id) {
-            return
+            return;
         } else {
-            const pathArr = el.src.split('/');
-            const name = pathArr[pathArr.length - 1];
 
-            const element = {
-                "color": name,
-                "bw": `${name}__bw`
+            let imgNamesArr = el.src.split('/');
+            const name = imgNamesArr[imgNamesArr.length - 1];
+            let newName = name.split(".");
+            switch (topic) {
+                case "dark":
+                    newName[0] = newName[0] + "__bw";
+                    break;
+                case "light":
+                    newName[0] = newName[0].split("__bw").join("");
+                    break;
+                default: break;
             }
+imgNamesArr[imgNamesArr.length - 1] = newName.join(".");
+            const newPath = imgNamesArr.join("/");
+            el.src = newPath;
+        }
+    });
 
-            imgPathArr.push(element);}
-});
-    return imgPathArr;
 }
