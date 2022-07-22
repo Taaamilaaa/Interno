@@ -62,8 +62,8 @@ const onLightTopicChange = (topic) => {
     document.documentElement.style.setProperty('--title-color', 'var(--title-color-light-topic)');
     document.documentElement.style.setProperty('--minor-background-color', 'var(--minor-background-color-light-topic)');
 
-    refs.hero.style.backgroundImage = "url(/images/hero-img.jpg)";
-    // imgChange(topic);
+    refs.hero.style.backgroundImage = "url(./images/hero-img.jpg)";
+    imgChange(topic);
     return;
 };
 
@@ -79,8 +79,8 @@ const onDarkTopicChange = (topic) => {
         el.style.color = 'var(--text-color-light-topic)';
     });
 
-    refs.hero.style.backgroundImage = "url(/images/hero-img__bw.jpg)";
-    // imgChange(topic);
+    refs.hero.style.backgroundImage = "url(./images/hero-img__bw.jpg)";
+    imgChange(topic);
     return;
 };
 
@@ -106,6 +106,7 @@ function imgChange(topic) {
             }
 imgNamesArr[imgNamesArr.length - 1] = newName.join(".");
             const newPath = imgNamesArr.join("/");
+            
             el.src = newPath;
         }
     });
