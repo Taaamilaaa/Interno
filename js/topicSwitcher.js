@@ -63,7 +63,7 @@ const onLightTopicChange = (topic) => {
     document.documentElement.style.setProperty('--minor-background-color', 'var(--minor-background-color-light-topic)');
 
     refs.hero.style.backgroundImage = "url(/images/hero-img.jpg)";
-    imgChange(topic);
+    // imgChange(topic);
     return;
 };
 
@@ -80,7 +80,7 @@ const onDarkTopicChange = (topic) => {
     });
 
     refs.hero.style.backgroundImage = "url(/images/hero-img__bw.jpg)";
-    imgChange(topic);
+    // imgChange(topic);
     return;
 };
 
